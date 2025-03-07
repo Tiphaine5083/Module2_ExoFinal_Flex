@@ -1,0 +1,38 @@
+* {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+header nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #007eb3;
+}
+header nav li {
+    color: #fff;
+}
+
+header nav li a:link {
+    text-decoration: none;
+    color: #fff
+}
+
+h1 {
+    font-size: 2.8125em;
+    text-align: center;
+    color: #007eb3;
+    word-spacing: 10px;
+    border-bottom: 1px dashed #007eb3;
+}
