@@ -38,14 +38,15 @@ header {
 }
 
 header nav {
-    list-style: none;
     display: flex;
-    justify-content: space-evenly;
     background-color: #007eb3;
 }
 
-header nav li {
-    color: #fff;
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
 }
 
 header nav li a:link {
