@@ -3,55 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./assets/css/style.css" media="screen">
-
     <script src="https://kit.fontawesome.com/8adc571076.js" crossorigin="anonymous"></script>
-
     <title>Hello World</title>
 </head>
 <body>
     <header>
-    <a href="#"><img src="./assets/img/logo.png" alt="logo HelloWorld" class="logo"></a>
-    <nav>
-        <li><a href="Carnet">Carnet de voyages</a</li>
-        <li><a href="Quand">Quand partir ?</a></li>
-        <li><a href="aPropos">À propos</a></li>
-        <li><a href="Contact">Me contacter</a></li>
-    </nav>
+        <a href="index.html"><img src="./assets/img/logo.png" alt="logo Hello World" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="Carnet">Carnet de voyages</a</li>
+                <li><a href="Quand">Quand partir ?</a></li>
+                <li><a href="aPropos">À propos</a></li>
+                <li><a href="Contact">Me contacter</a></li>
+            </ul>
+        </nav>
     </header>
-
-        <h1 id="Carnet">Carnets de voyages</h1>
-
         <main>
-            <section class="voyages">
+            <h1>Carnets de voyages</h1>
+            <section id="Carnet" class="container">
                 <h2>mes derniers voyages</h2>
                     <h3>Vienne, Autriche</h3>
-                    <div class="container">
+                    <div class="voyages">
                         <img src="./assets/img/vienne.jpg" alt="Vienne, Autriche" class="image">
                         <div class="description">
                             <p>Vienne est un mélange d'architecture fastueuse, de musique et de charme pittoresque.</p>
-                            <p>Semblable à nulle autre, Vienne préserve intact son aspect historique d'origine marqué par des édifices fastueux datant de l'époque baroque et des débuts du XXème siècle.</p>
+                            <p>Semblable à nulle autre, <strong>Vienne</strong> préserve intact son aspect historique d'origine marqué par des édifices fastueux datant de l'époque baroque et des débuts du XXème siècle.</p>
                             <p>La moitié de la ville est située sur le Danube et offre des parcs, la forêt viennoise et même des zones viticoles pour les loisirs.</p>
                             <a href="#">En savoir plus</a>
                         </div>
                     </div>
                     <h3>Marrakech, Maroc</h3>
-                    <div class="container containerR">
+                    <div class="voyages voyagesR">
                         <img src="./assets/img/marrakech.jpg" alt="Marrakech, Maroc" class="image">
                         <div class="description">
-                            <p>Marrakech, est une ville située dans le centre du Maroc au pied des montagnes de l'Atlas. Marrakech est surnommée <span class="rouge">« la ville rouge »</span> ou la <span class="ocre">« ville ocre »</span> en référence à la couleur rouge d'une grande partie de ses immeubles et ses maisons.</p>
+                            <p>Marrakech, est une ville située dans le centre du Maroc au pied des montagnes de l'Atlas. <strong>Marrakech</strong> est surnommée <span class="rouge">« la ville rouge »</span> ou la <span class="ocre">« ville ocre »</span> en référence à la couleur rouge d'une grande partie de ses immeubles et ses maisons.</p>
                             <p>Marrakech est une ville unique en son genre qui se distingue totalement du reste. Visiter Marrakech est une expérience qui stimulera tous vos sens : ses couleurs, ses saveurs et ses odeurs vous marqueront dès votre arrivée et vous accompagneront des semaines après votre retour.</p>
                             <a href="#">En savoir plus</a>
                         </div>
+                    </div class="container">
+                    <h2>les meilleures saisons pour voyager</h2>
+                    <table id="Quand" class="saison">
+                        <thead>
+                            <tr>
+                            <th>Ville</th>
+                            <th>Pays</th>
+                            <th>Périodes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Bali</td>
+                            <td>Indonésie</td>
+                            <td>juin à septembre</td>
+                        </tr>
+                        <tr>
+                            <td>Marrakech</td>
+                            <td>Maroc</td>
+                            <td>mars à juin, septembre à novembre</td>
+                        </tr>
+                        <tr>
+                            <td>Miami</td>
+                            <td>Usa</td>
+                            <td>janvier à avril, novembre, décembre</td>
+                        </tr>
+                        <tr>
+                            <td>Vienne</td>
+                            <td>Autriche</td>
+                            <td>juin à septembre</td>
+                        </tr>
+                        <tr>
+                            <td>Sydney</td>
+                            <td>Australie</td>
+                            <td>mars à mai, septembre et octobre</td>
+                        </tr>
+                        </tbody>
+                    </table>
                     </div>
+            </section>
 
+            <section id="aPropos" class="aPropos">
+                <div class="container">
+                    <div class="infos">
+                        <h2>à propos</h2>
+                        <p>Je m'appelle Claire et j'aime les <strong>voyages</strong> et l'<strong>aventure</strong></p>
+                        <p>C'est suite à un long <strong>tour du monde</strong> que j'ai changé de vie et que j'ai décidé de créer ce blog pour vous aider à voyager.</p>
+                        <p>Ma passion pour le voyage est désormais devenu mon métier.</p>
+                        <p>Vous pourrez trouver ici de l'inspiration et de nombreux conseils pour <strong>réduire votre budget voyages</strong> et pouvoir partir plus souvent.</p>
+                    </div>
+                </div>
+            </section>
 
+            <section id="Contact" class="container">
+                <h2>me contacter</h2>
+                <div class="meContacter">
+                    <adress class="adress">
+                        <em>31 Rue d'Auteuil, Paris 16<sup>ème</sup></em>
+                    </adress>
+                    <em><a href="mailto:claire@helloworld.com" class="eMail">claire@helloworld.com</a></em>
+                    <em><a href="tel:+33(0)601030507" class="tel">06 01 03 05 07</a></em>
+                </div>
+                <h3>Formulaire de contact</h3>
+                <div class="formulaire">
+                    <form action="/" method="get" class="formulaire">
+                        <fieldset class="formContent">
+                        <div class="CoorMess">
+                        <div class="coordonnees">
+                            <div>
+                                <input type="text" name="Nom" placeholder="Votre nom">
+                            </div>
+                            <div>
+                                <input type="email" name="adresseMail" id="mailContact" placeholder="Votre email">
+                            </div>
+                            <div>
+                                <input type="tel" name="Telephone" id="telContact" placeholder="Votre numéro de téléphone">
+                            </div>
+                        </div>
+                            <div class="Message">
+                                <textarea name="Message" id="Message" placeholder="Votre message"></textarea>
+                            </div>
+                        </div>
+                            <div class="envoi"><input type="submit" value="Envoyer" class="bouton"></div>
+                    </fieldset>
+                    </form>
+                </div>
+                <div class="reseaux">
+                    <p>Suivez-moi sur :</p>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+                   <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
             </section>
         </main>
+    <footer>
+        <div class="logo3wA">
+            <img src="./assets/img/logo-3wa.png" alt="logo 3W Academy">
+        </div>
+        <div class="texte footer">
+            <p>
+                Ce matériel pédagogique est la propriété de la <a href="https://3wa.fr/propriete-materiel-pedagogique">3W Academy</a>. Cet exercice a été réalisé par <a href="https://www.consultantweb.eu">Tiphaine LE CAM</a>.
+                <br> Images fournies par <a href="https://pixabay.com">Pixabay</a>.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
